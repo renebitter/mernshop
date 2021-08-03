@@ -1,0 +1,9 @@
+@import './bootstrap.min.css';
+
+main {
+  min-height: 80vh;
+}
+
+.rating span i {
+  color: #ffe600;
+}
