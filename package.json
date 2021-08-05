@@ -1,0 +1,15 @@
+{
+  "name": "mernshop",
+  "version": "1.0.0",
+  "description": "MERN eCommerce Site",
+  "main": "server.js",
+  "repository": "https://github.com/renebitter/proshop.git",
+  "author": "Rene <renebitter@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node backend/server"
+  }
+}
