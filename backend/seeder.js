@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+//Script for importation and deletion of data into the DB
 import dotenv from 'dotenv';
 import users from './data/users.js';
 import products from './data/products.js';

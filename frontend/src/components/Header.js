@@ -1,13 +1,5 @@
 import { LinkContainer } from 'react-router-bootstrap';
-import {
-  Navbar,
-  Nav,
-  Container,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -24,24 +16,6 @@ const Header = () => {
               className='ml-auto my-2 my-lg-0'
               style={{ maxHeight: '100px' }}
               navbarScroll>
-              {/* <NavDropdown title='Category' id='navbarScrollingDropdown'>
-                <NavDropdown.Item href='#action3'>Products 1</NavDropdown.Item>
-                <NavDropdown.Item href='#action4'>Products 2</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href='#action5'>
-                  Sub-Category
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Form className='d-flex'>
-                <FormControl
-                  type='search'
-                  placeholder='Search'
-                  className='mr-2'
-                  aria-label='Search'
-                />
-                <Button variant='outline-primary btn-sm'>Search</Button>
-              </Form> */}
-
               <LinkContainer to='/cart'>
                 <Nav.Link>
                   <i className='fas fa-shopping-cart'></i> Cart
