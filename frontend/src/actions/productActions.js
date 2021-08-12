@@ -7,16 +7,6 @@ import {
 
 export const listProducts = () => async (dispatch) => {
   try {
-    // setLoading();
-
-    // const res = await fetch('/api/products', {
-    //   method: 'GET',
-    //   body: JSON.stringify(),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    // });
-
     dispatch({
       type: PRODUCT_LIST_REQUEST,
     });
@@ -37,10 +27,3 @@ export const listProducts = () => async (dispatch) => {
     });
   }
 };
-
-// Set loading to true
-// export const setLoading = () => {
-//   return {
-//     type: SET_LOADING,
-//   };
-// };
