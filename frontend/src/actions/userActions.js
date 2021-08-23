@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {
+  USER_LOGIN_FAIL,
   USER_LOGIN_REQUEST,
   USER_LOGIN_SUCCESS,
 } from '../constants/userConstants';
@@ -30,7 +31,7 @@ export const login = (email, password) => async (dispatch) => {
     localStorage.setItem('userInfo', JSON.stringify(data));
   } catch (error) {
     dispatch({
-      type: PRODUCT_LOGIN_FAIL,
+      type: USER_LOGIN_FAIL,
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
