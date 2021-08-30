@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Button, Table } from 'react-bootstrap';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
-import { listUsers } from '../actions/userActions';
+import { listUsers, deleteUser } from '../actions/userActions';
 
 const UserListScreen = ({ history }) => {
   const dispatch = useDispatch();
@@ -15,8 +15,13 @@ const UserListScreen = ({ history }) => {
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
+  const userDelete = useSelector((state) => state.userDelete);
+  const { success: successDelete } = userDelete;
+
   const deleteHandler = (id) => {
-    console.log('delete');
+    if (window.confirm('Are you sure you want to delete?')) {
+      dispatch(deleteUser(id));
+    }
   };
 
   useEffect(() => {
@@ -25,7 +30,7 @@ const UserListScreen = ({ history }) => {
     } else {
       history.push('/login');
     }
-  }, [dispatch, history]);
+  }, [dispatch, history, successDelete]);
 
   return (
     <>
