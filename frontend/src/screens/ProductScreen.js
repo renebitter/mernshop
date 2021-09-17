@@ -92,6 +92,7 @@ const ProductScreen = ({ history, match }) => {
                       <Col>Qty</Col>
                       <Col>
                         <Form.Control
+                          style={{ width: 'unset' }}
                           as='select'
                           value={qty}
                           onChange={(e) => setQty(e.target.value)}>

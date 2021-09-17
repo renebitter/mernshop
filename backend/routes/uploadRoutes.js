@@ -1,12 +1,13 @@
 import express from 'express';
 import multer from 'multer';
 import path from 'path';
+import { protect, isAdmin } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
 const storage = multer.diskStorage({
   destination(req, file, cb) {
-    cb(null, '/uploads');
+    cb(null, 'uploads/');
   },
   filename(req, file, cb) {
     cb(
@@ -16,10 +17,10 @@ const storage = multer.diskStorage({
   },
 });
 
-function fileType(file, cb) {
-  const fileTypes = /jpg|jpeg|png/;
+function checkFileType(file, cb) {
+  const filetypes = /jpg|jpeg|png/;
   const extName = filetypes.test(path.extname(file.originalname).toLowerCase());
-  const mimetype = fileTypes.test(file.mimetype);
+  const mimetype = filetypes.test(file.mimetype);
 
   if (extName && mimetype) {
     return cb(null, true);
@@ -35,8 +36,9 @@ const upload = multer({
   },
 });
 
-router.post('/', upload.single('image'), (req, res) => {
-  res.send(`/${req.file.path}`);
+// TODO: set protect & isAdmin
+router.route('/').post(upload.single('image'), (req, res) => {
+  res.send(`/${req.file.path.replace(/\\/g, '/')}`);
 });
 
 export default router;

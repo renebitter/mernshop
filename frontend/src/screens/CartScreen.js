@@ -59,6 +59,7 @@ const CartScreen = ({ match, location, history }) => {
                   <Col md={2}>${item.price}</Col>
                   <Col md={2}>
                     <Form.Control
+                      style={{ width: 'unset' }}
                       as='select'
                       value={item.qty}
                       onChange={(e) =>
