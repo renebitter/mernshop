@@ -2,6 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logout } from '../actions/userActions';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
+import SearchBox from './SearchBox';
+import { Route } from 'react-router-dom';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -22,6 +24,8 @@ const Header = () => {
 
           <Navbar.Toggle aria-controls='navbarScroll' />
           <Navbar.Collapse id='navbarScroll'>
+            {/* TODO: const history = useHistory() */}
+            <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav
               className='ml-auto my-2 my-lg-0'
               style={{ maxHeight: '100px' }}
