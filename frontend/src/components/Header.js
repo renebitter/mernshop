@@ -30,12 +30,6 @@ const Header = () => {
               className='ml-auto my-2 my-lg-0'
               style={{ maxHeight: '100px' }}
               navbarScroll>
-              <LinkContainer to='/cart'>
-                <Nav.Link>
-                  <i className='fas fa-shopping-cart'></i> Cart
-                </Nav.Link>
-              </LinkContainer>
-
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
@@ -68,6 +62,12 @@ const Header = () => {
                   </LinkContainer>
                 </NavDropdown>
               )}
+
+              <LinkContainer to='/cart'>
+                <Nav.Link>
+                  <i className='fas fa-shopping-cart'></i> Cart
+                </Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Container>
