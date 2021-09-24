@@ -39,3 +39,7 @@ main {
     font-size: 2.5vw;
   }
 }
+
+.pagination {
+  justify-content: center;
+}
