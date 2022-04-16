@@ -1,4 +1,4 @@
 # proshop
 Fullstack eCommerce - MERN - Redux
 
-https://proshop111112222.herokuapp.com/
+https://mernshop-99.herokuapp.com/
