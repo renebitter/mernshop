@@ -8,12 +8,12 @@ https://mernshop-99.herokuapp.com/
 
 ### Backend
 
-server.js
-<br>
+- server.js
+  <br>
 
 - config
-  db.js (connection)
-  <br>
+  - db.js (connects to mongodb)
+    <br>
 - controllers
   order
   product
@@ -95,40 +95,42 @@ server.js
 
   #### Components
 
-  Footer //
-  CheckoutSteps.js
-  FormContainer
-  Header.js ({userLogin}, { history }, {userInfo})
-  Loader //
-  Message (defaultProps ‘info’)
-  Meta (Helmet)
-  Pagination (Array)
-  Product ({product})
-  ProductCarousel
-  Rating
-  SearchBox
+  - Footer //
+  - CheckoutSteps.js
+  - FormContainer
+  - Header.js
+    ({userLogin}, { history }, {userInfo})
+    <br>
+  - Loader //
+  - Message (defaultProps ‘info’)
+  - Meta (Helmet)
+  - Pagination (Array)
+  - Product ({product})
+  - ProductCarousel
+  - Rating
+  - SearchBox
+    <br>
+
+#### Screens/Pages
+
+- **Main:**
+  Home
+  Product
+  Cart
   <br>
-
-  #### Screens/Pages
-
-  - **Main:**
-    Home
-    Product
-    Cart
-    <br>
-  - **Auth:**
-    Login
-    Register
-    Profile
-    Shipping
-    Payment
-    PlaceOrder
-    Order
-    <br>
-  - **Admin:**
-    OrderList
-    ProductEdit
-    ProductList
-    UserEdit
-    UserList
-    <br>
+- **Auth:**
+  Login
+  Register
+  Profile
+  Shipping
+  Payment
+  PlaceOrder
+  Order
+  <br>
+- **Admin:**
+  OrderList
+  ProductEdit
+  ProductList
+  UserEdit
+  UserList
+  <br>
