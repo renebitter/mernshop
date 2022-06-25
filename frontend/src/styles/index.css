@@ -1,11 +1,11 @@
-@import './bootstrap.min.css';
+@import './bootstrap.css';
 
 main {
   min-height: 80vh;
 }
 
 .rating span i {
-  color: #ffe600;
+  color: #ffbb00;
 }
 
 /* carousel */
@@ -42,4 +42,72 @@ main {
 
 .pagination {
   justify-content: center;
+}
+
+/* --bs-body-bg: #dae0ff;
+--dark-color: #836ede;
+--light-color: #f5d2b3; */
+.c-navbar {
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link .navbar-brand {
+  color: var(--dark-color) !important;
+}
+
+.btn {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn:focus {
+  background-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn:active {
+  background-color: #7964d6 !important;
+  color: #ffffff;
+}
+
+.card {
+  box-shadow: unset !important;
+  background-color: #ffffff !important;
+}
+
+.pagination {
+  background-color: unset !important;
+  box-shadow: none;
+}
+
+.page-link {
+  background-color: #cfdaff;
+}
+
+.page-item.active .page-link {
+  background-color: #afc1ff !important;
+}
+
+.list-group {
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 6px rgb(132 137 247 / 10%),
+    inset -3px -2px 4px rgb(132 137 247 / 27%);
+}
+
+.form-inline {
+  display: flex;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+
+.search-button {
+  border-radius: 0px 6px 6px 0;
 }
