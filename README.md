@@ -35,6 +35,7 @@ https://mernshop-99.herokuapp.com/
   user
   <br>
 - data
+
   Can be seeded with seeder.js utility (current DB entries will be deleted!)
   <br>
 - middleware
