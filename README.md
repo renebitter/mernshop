@@ -4,6 +4,10 @@ Fullstack eCommerce - MERN with Redux
 
 https://mernshop-99.herokuapp.com/
 
+## About
+
+Build with React and Redux for it's state management. This is a fully functional e-commerce website including: product listing, pagination, product detail page, search, user authentication, user profile page, rating, review and payment (paypal integration). Admin user and admin area with CRUD functionality for users, products and orders.
+
 ## Content
 
 - [Backend](#Backend)
@@ -38,6 +42,7 @@ https://mernshop-99.herokuapp.com/
 
   Can be seeded with seeder.js utility (current DB entries will be deleted!)
   <br>
+
 - middleware
   auth
   error
@@ -162,7 +167,7 @@ https://mernshop-99.herokuapp.com/
 
     - Hashes PW:
       _Enables storing of passwords as hashed passwords instead of plaintext._
-      
+
       _**.hashSync** synchronously generates a hash for the given string. It returns the hashed string._
 
       ```js
