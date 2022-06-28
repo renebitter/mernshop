@@ -162,6 +162,7 @@ https://mernshop-99.herokuapp.com/
 
     - Hashes PW:
       _Enables storing of passwords as hashed passwords instead of plaintext._
+      
       _**.hashSync** synchronously generates a hash for the given string. It returns the hashed string._
 
       ```js
