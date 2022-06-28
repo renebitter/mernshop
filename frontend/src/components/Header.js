@@ -19,7 +19,7 @@ const Header = () => {
       <Navbar className='c-navbar' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>MERNShop</Navbar.Brand>
+            <Navbar.Brand>MernShop</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='navbarScroll' />
