@@ -67,23 +67,27 @@ main {
   color: var(--dark-color) !important;
 }
 
-.btn {
+.btn-primary {
   background-color: var(--dark-color);
+  border-color: var(--dark-color);
   color: #ffffff;
 }
 
-.btn:hover {
+.btn-primary:hover {
   background-color: var(--dark-color);
+  border-color: var(--dark-color);
   color: #ffffff;
 }
 
-.btn:focus {
+.btn-primary:focus {
   background-color: var(--dark-color);
+  border-color: var(--dark-color);
   color: #ffffff;
 }
 
-.btn:active {
-  background-color: #7964d6 !important;
+.btn-primary:active {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
   color: #ffffff;
 }
 
