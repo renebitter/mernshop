@@ -91,6 +91,12 @@ body {
   color: #ffffff;
 }
 
+.btn-primary:disabled {
+  color: #7e7575;
+  background-color: #e5e6e7;
+  border-color: #bbbbbb;
+}
+
 .card {
   box-shadow: unset !important;
   background-color: #ffffff !important;
@@ -143,4 +149,13 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--dark-color);
+}
+
+.navbar-nav.navbar-nav-scroll {
+  max-height: unset !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--dark-color);
 }
