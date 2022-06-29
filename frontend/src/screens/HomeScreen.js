@@ -8,6 +8,7 @@ import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
 import ProductCarousel from '../components/ProductCarousel';
+import Hero from '../components/Hero';
 import Meta from '../components/Meta';
 
 const HomeScreen = ({ match }) => {
@@ -27,9 +28,12 @@ const HomeScreen = ({ match }) => {
     <>
       <Meta />
       {!keyword ? (
-        <ProductCarousel />
+        <>
+          <Hero />
+          <ProductCarousel />
+        </>
       ) : (
-        <Link to='/' className='btn btn-dark'>
+        <Link to='/' className='btn btn-primary'>
           Go Back
         </Link>
       )}

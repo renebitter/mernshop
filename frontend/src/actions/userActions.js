@@ -209,8 +209,6 @@ export const listUsers = () => async (dispatch, getState) => {
       type: USER_LIST_SUCCESS,
       payload: data,
     });
-
-    localStorage.setItem('userInfo', JSON.stringify(data));
   } catch (error) {
     dispatch({
       type: USER_LIST_FAIL,

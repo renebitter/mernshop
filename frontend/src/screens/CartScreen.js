@@ -39,8 +39,8 @@ const CartScreen = ({ match, location, history }) => {
 
   return (
     <Row>
-      <Col md={8}>
-        <h1>Shopping Cart</h1>
+      <h1>Shopping Cart</h1>
+      <Col md={8} className='mt-3'>
         {cartItems.length === 0 ? (
           <Message>
             Your cart is empty <Link to='/'>Go Back</Link>
@@ -88,7 +88,7 @@ const CartScreen = ({ match, location, history }) => {
           </ListGroup>
         )}
       </Col>
-      <Col md={4}>
+      <Col md={4} className='mt-3'>
         <Card>
           <ListGroup variant='flush'>
             <ListGroup.Item>

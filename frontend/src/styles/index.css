@@ -1,11 +1,23 @@
+/* @import './bootstrap.css'; */
 @import './bootstrap.min.css';
 
-main {
-  min-height: 80vh;
+:root {
+  --body-bg: #dae0ff;
+  --dark-color: #836ede;
+  --light-color: #f5d2b3;
 }
 
+body {
+  background-color: var(--body-bg);
+  color: var(--dark-color);
+}
+
+/* main {
+  min-height: 80vh;
+} */
+
 .rating span i {
-  color: #ffe600;
+  color: #ffbb00;
 }
 
 /* carousel */
@@ -42,4 +54,108 @@ main {
 
 .pagination {
   justify-content: center;
+}
+
+/* --bs-body-bg: #dae0ff;
+--dark-color: #836ede;
+--light-color: #f5d2b3; */
+.c-navbar {
+  background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link .navbar-brand {
+  color: var(--dark-color) !important;
+}
+
+.btn-primary {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn-primary:focus {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn-primary:active {
+  background-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: #ffffff;
+}
+
+.btn-primary:disabled {
+  color: #7e7575;
+  background-color: #e5e6e7;
+  border-color: #bbbbbb;
+}
+
+.card {
+  box-shadow: unset !important;
+  background-color: #ffffff !important;
+}
+
+.pagination {
+  background-color: unset !important;
+  box-shadow: none;
+}
+
+.page-link {
+  background-color: #cfdaff;
+}
+
+.page-item.active .page-link {
+  background-color: #afc1ff !important;
+}
+
+.list-group {
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: inset 2px 2px 6px rgb(132 137 247 / 10%),
+    inset -3px -2px 4px rgb(132 137 247 / 27%);
+}
+
+.form-inline {
+  display: flex;
+}
+
+.navbar-brand {
+  font-family: 'Titan One', cursive;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--dark-color);
+  color: white !important;
+  text-shadow: 4px 3px 0px #bebece;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-between;
+}
+
+.search-button {
+  border-radius: 0px 6px 6px 0;
+}
+
+.carousel-caption h2 {
+  color: var(--dark-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--dark-color);
+}
+
+.navbar-nav.navbar-nav-scroll {
+  max-height: unset !important;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: var(--dark-color);
 }

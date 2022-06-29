@@ -100,7 +100,7 @@ const ProductEditScreen = ({ match, history }) => {
 
   return (
     <>
-      <Link to='/admin/productlist' className='btn btn-dark my-3'>
+      <Link to='/admin/productlist' className='btn btn-primary my-3'>
         Go Back
       </Link>
       <FormContainer>
@@ -139,6 +139,7 @@ const ProductEditScreen = ({ match, history }) => {
                 value={image}
                 onChange={(e) => setImage(e.target.value)}></Form.Control>
               <Form.File
+                className='my-3'
                 id='image-file'
                 label='Choose file'
                 custom
@@ -184,7 +185,7 @@ const ProductEditScreen = ({ match, history }) => {
                 onChange={(e) => setDescription(e.target.value)}></Form.Control>
             </Form.Group>
 
-            <Button type='submit' variant='primary'>
+            <Button type='submit' className='my-3' variant='primary'>
               Update
             </Button>
           </Form>

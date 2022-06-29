@@ -81,7 +81,7 @@ const RegisterScreen = ({ location, history }) => {
             onChange={(e) => setConfirmPassword(e.target.value)}></Form.Control>
         </Form.Group>
 
-        <Button type='submit' variant='primary'>
+        <Button className='my-3' type='submit' variant='primary'>
           Register
         </Button>
       </Form>
@@ -90,7 +90,7 @@ const RegisterScreen = ({ location, history }) => {
         <Col>
           Have an Account?{' '}
           <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>
-            Register
+            Login
           </Link>
         </Col>
       </Row>

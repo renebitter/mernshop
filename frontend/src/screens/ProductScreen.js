@@ -56,7 +56,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link to='/' className='btn btn-dark my-3'>
+      <Link to='/' className='btn btn-primary my-3'>
         Go Back
       </Link>
       {loading ? (
@@ -67,10 +67,14 @@ const ProductScreen = ({ history, match }) => {
         <>
           <Meta title={product.name} />
           <Row>
-            <Col md={6}>
-              <Image src={product.image} alt={product.name} fluid></Image>
+            <Col lg={6}>
+              <Image
+                src={product.image}
+                // src='../images/box-packaging-template-for-product-design-illustration-vector.jpg'
+                alt={product.name}
+                fluid></Image>
             </Col>
-            <Col md={3}>
+            <Col lg={3}>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
@@ -91,7 +95,7 @@ const ProductScreen = ({ history, match }) => {
                 </ListGroup.Item>
               </ListGroup>
             </Col>
-            <Col md={3}>
+            <Col lg={3}>
               <Card>
                 <ListGroup variant='flush'>
                   <ListGroup.Item>
@@ -152,7 +156,7 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col lg={6}>
               <h2>Reviews</h2>
               {product.reviews.length === 0 && <Message>No Reviews</Message>}
               <ListGroup>
@@ -195,7 +199,7 @@ const ProductScreen = ({ history, match }) => {
                             setComment(e.target.value)
                           }></Form.Control>
                       </Form.Group>
-                      <Button type='submit' variant='primary'>
+                      <Button className='my-3' type='submit' variant='primary'>
                         Submit
                       </Button>
                     </Form>
