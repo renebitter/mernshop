@@ -12,9 +12,9 @@ body {
   color: var(--dark-color);
 }
 
-main {
+/* main {
   min-height: 80vh;
-}
+} */
 
 .rating span i {
   color: #ffbb00;
