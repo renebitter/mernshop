@@ -41,6 +41,12 @@ Build with React and Redux for it's state management. This is a fully functional
 - data
 
   Can be seeded with seeder.js utility (current DB entries will be deleted!)
+
+  ```js
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+  ```
+
   <br>
 
 - middleware

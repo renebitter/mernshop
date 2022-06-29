@@ -56,7 +56,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link to='/' className='btn btn-dark my-3'>
+      <Link to='/' className='btn btn-primary my-3'>
         Go Back
       </Link>
       {loading ? (
@@ -69,7 +69,8 @@ const ProductScreen = ({ history, match }) => {
           <Row>
             <Col lg={6}>
               <Image
-                src='../images/box-packaging-template-for-product-design-illustration-vector.jpg'
+                src={product.image}
+                // src='../images/box-packaging-template-for-product-design-illustration-vector.jpg'
                 alt={product.name}
                 fluid></Image>
             </Col>

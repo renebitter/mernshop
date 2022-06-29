@@ -33,7 +33,7 @@ const HomeScreen = ({ match }) => {
           <ProductCarousel />
         </>
       ) : (
-        <Link to='/' className='btn btn-dark'>
+        <Link to='/' className='btn btn-primary'>
           Go Back
         </Link>
       )}
