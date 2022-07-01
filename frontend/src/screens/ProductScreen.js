@@ -66,15 +66,15 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
           <Meta title={product.name} />
-          <Row>
-            <Col lg={6}>
+          <Row className='mb-5'>
+            <Col lg={6} className='mb-3'>
               <Image
                 src={product.image}
                 // src='../images/box-packaging-template-for-product-design-illustration-vector.jpg'
                 alt={product.name}
                 fluid></Image>
             </Col>
-            <Col lg={3}>
+            <Col lg={3} className='mb-3'>
               <ListGroup variant='flush'>
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
@@ -145,7 +145,7 @@ const ProductScreen = ({ history, match }) => {
                   <ListGroup.Item>
                     <Button
                       onClick={addToCartHandler}
-                      className='btn-block'
+                      className='btn-block w-100'
                       type='button'
                       disabled={product.countInStock === 0}>
                       Add To Cart

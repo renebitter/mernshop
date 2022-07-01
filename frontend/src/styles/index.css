@@ -16,6 +16,10 @@ body {
   min-height: 80vh;
 } */
 
+a {
+  color: var(--dark-color);
+}
+
 .rating span i {
   color: #ffbb00;
 }
