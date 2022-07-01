@@ -125,6 +125,7 @@ const ProductScreen = ({ history, match }) => {
                         <Col>Qty</Col>
                         <Col>
                           <Form.Control
+                            className='form-select'
                             style={{ width: 'unset' }}
                             as='select'
                             value={qty}
@@ -178,6 +179,7 @@ const ProductScreen = ({ history, match }) => {
                       <Form.Group controlId='rating'>
                         <Form.Label>Rating</Form.Label>
                         <Form.Control
+                          className='form-select'
                           as='select'
                           value={rating}
                           onChange={(e) => setRating(e.target.value)}>
