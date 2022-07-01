@@ -19,6 +19,15 @@ body {
 
 a {
   color: var(--dark-color);
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Titan One', cursive;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--dark-color);
+  color: white !important;
 }
 
 .rating span i {
@@ -26,6 +35,10 @@ a {
 }
 
 /* carousel */
+.carousel {
+  margin-top: 100px;
+}
+
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
@@ -37,24 +50,24 @@ a {
 }
 
 .carousel-caption h2 {
-  color: #fff;
+  font-family: 'Titan One', cursive;
+  font-size: 2.5rem;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--dark-color);
+  color: white !important;
 }
 
 .carousel img {
-  height: 300px;
+  max-height: 745px;
+  width: 745px;
   padding: 30px;
-  margin: 40px;
+  margin: 100px;
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
 }
 .carousel a {
   margin: 0 auto;
-}
-@media (max-width: 900px) {
-  .carousel-caption h2 {
-    font-size: 2.5vw;
-  }
 }
 
 .pagination {
