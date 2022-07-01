@@ -30,6 +30,14 @@ h1 {
   color: white !important;
 }
 
+/* .hero {
+  background-image: url('/images/hero-sm.jpg');
+} */
+
+/* .hero {
+  background-image: url('/images/hero.jpg');
+} */
+
 .rating span i {
   color: #ffbb00;
 }
@@ -52,7 +60,13 @@ h1 {
 .carousel-caption h2 {
   font-family: 'Titan One', cursive;
   font-size: 2.5rem;
-  -webkit-text-stroke-width: 2px;
+  color: var(--dark-color);
+}
+
+.carousel-caption h3 {
+  font-family: 'Titan One', cursive;
+  font-size: 1.5rem;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--dark-color);
   color: white !important;
 }
