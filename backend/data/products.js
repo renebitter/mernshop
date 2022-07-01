@@ -1,6 +1,6 @@
 const products = [
   {
-    name: 'Product 1',
+    name: 'Drug 1',
     image: '/images/01.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas eos nihil quo quae nobis mollitia commodi, totam et. Nemo dicta, magnam quam eos dolorum nulla optio voluptas asperiores suscipit.',
@@ -13,7 +13,7 @@ const products = [
   },
 
   {
-    name: 'Product 2',
+    name: 'Drug 2',
     image: '/images/02.jpg',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas eos nihil quo quae nobis mollitia commodi, totam et. Nemo dicta, magnam quam eos dolorum nulla optio voluptas asperiores suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptas eos nihil quo quae nobis mollitia commodi, totam et. Nemo dicta, magnam quam eos dolorum nulla optio voluptas asperiores suscipit.',
@@ -25,7 +25,7 @@ const products = [
     numReviews: 8,
   },
   {
-    name: 'Product 3',
+    name: 'Nutrition 3',
     image: '/images/03.jpg',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur eos incidunt alias ducimus, minus error fugit, asperiores quasi, recusandae quis at voluptatum voluptates nemo. Beatae veniam nihil at excepturi.',
@@ -37,7 +37,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: 'Product 4',
+    name: 'Nutrition 4',
     image: '/images/01.jpg',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur eos incidunt alias ducimus, minus error fugit, asperiores quasi, recusandae quis at C voluptates nemo. Beatae veniam nihil at excepturi.',
@@ -49,7 +49,7 @@ const products = [
     numReviews: 12,
   },
   {
-    name: 'Product 5',
+    name: 'Security 5',
     image: '/images/02.jpg',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur eos incidunt alias ducimus, minus error fugit, asperiores quasi, recusandae quis at C voluptates nemo. Beatae veniam nihil at excepturi.',
@@ -61,7 +61,7 @@ const products = [
     numReviews: 10,
   },
   {
-    name: 'Product 6',
+    name: 'Security 6',
     image: '/images/03.jpg',
     description:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur eos incidunt alias ducimus, minus error fugit, asperiores quasi, recusandae quis at C voluptates nemo. Beatae veniam nihil at excepturi.',
