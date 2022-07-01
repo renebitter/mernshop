@@ -8,6 +8,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
   background-color: var(--body-bg);
   color: var(--dark-color);
 }
@@ -162,4 +163,9 @@ a {
 .dropdown-item.active,
 .dropdown-item:active {
   background-color: var(--dark-color);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: brightness(0.5) sepia(1) hue-rotate(204deg) saturate(5);
 }

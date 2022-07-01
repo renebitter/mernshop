@@ -56,7 +56,7 @@ const ProductScreen = ({ history, match }) => {
 
   return (
     <>
-      <Link to='/' className='btn btn-primary my-3'>
+      <Link to='/' className='btn btn-primary mt-4'>
         Go Back
       </Link>
       {loading ? (
@@ -66,13 +66,13 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
           <Meta title={product.name} />
-          <Row className='mb-5'>
+          <Row className='my-5'>
             <Col lg={6} className='mb-3'>
               <Image
                 src={product.image}
-                // src='../images/box-packaging-template-for-product-design-illustration-vector.jpg'
                 alt={product.name}
-                fluid></Image>
+                fluid
+                rounded></Image>
             </Col>
             <Col lg={3} className='mb-3'>
               <ListGroup variant='flush'>
