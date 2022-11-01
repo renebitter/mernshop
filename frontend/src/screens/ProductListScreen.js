@@ -50,15 +50,16 @@ const ProductListScreen = ({ history, match }) => {
 
   useEffect(() => {
     dispatch({ type: PRODUCT_CREATE_RESET });
-    if (userInfo && !userInfo.isAdmin) {
-      history.push('/login');
-    }
 
-    if (successCreate) {
-      history.push(`/admin/product/${createdProduct._id}/edit`);
+    if (userInfo && (userInfo.isAdmin || userInfo.isDummy)) {
+      if (successCreate) {
+        history.push(`/admin/product/${createdProduct._id}/edit`);
+      } else {
+        //First param in listProducts is for keyword which is not needed here
+        dispatch(listProducts('', pageNumber));
+      }
     } else {
-      //First param in listProducts is for keyword which is not needed here
-      dispatch(listProducts('', pageNumber));
+      history.push('/login');
     }
   }, [
     dispatch,

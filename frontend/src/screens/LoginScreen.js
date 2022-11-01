@@ -30,6 +30,15 @@ const LoginScreen = ({ location, history }) => {
     dispatch(login(email, password));
   };
 
+  const dummyHandler = (e) => {
+    e.preventDefault();
+
+    const email = process.env.REACT_APP_DUMMY_EMAIL;
+    const password = process.env.REACT_APP_DUMMY_PW;
+
+    dispatch(login(email, password));
+  };
+
   return (
     <FormContainer>
       <h1>Sign in</h1>
@@ -68,6 +77,20 @@ const LoginScreen = ({ location, history }) => {
           </Link>
         </Col>
       </Row>
+
+      <div className='mt-5'>
+        <Col>
+          <div className='fade alert alert-info show'>
+            Can't be bothered? <br />
+            Just login as a dummy admin user.
+            <br />
+            CRUD actions are disabled though.
+          </div>
+          <Button className='my-3' onClick={dummyHandler} variant='primary'>
+            Dummy Login
+          </Button>
+        </Col>
+      </div>
     </FormContainer>
   );
 };

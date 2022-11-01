@@ -25,7 +25,7 @@ const UserListScreen = ({ history }) => {
   };
 
   useEffect(() => {
-    if (userInfo && userInfo.isAdmin) {
+    if (userInfo && (userInfo.isAdmin || userInfo.isDummy)) {
       dispatch(listUsers());
     } else {
       history.push('/login');
