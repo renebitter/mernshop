@@ -47,13 +47,18 @@ const ProfileScreen = ({ location, history }) => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    if (password !== confirmPassword) {
-      setMessage('Passwords do not match');
+    if (!userInfo.isDummy) {
+      if (password !== confirmPassword) {
+        setMessage('Passwords do not match');
+      } else {
+        dispatch(updateUserProfile({ id: user._id, name, email, password }));
+      }
     } else {
-      dispatch(updateUserProfile({ id: user._id, name, email, password }));
+      window.confirm('Not allowed, dummy!');
     }
   };
 
+  console.log(userInfo);
   return (
     <Row>
       <Col md={3}>
