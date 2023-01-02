@@ -7,9 +7,6 @@
   "repository": "https://github.com/renebitter/proshop.git",
   "author": "Rene <renebitter@gmail.com>",
   "license": "MIT",
-  "engines": {
-    "node": "16.18.0"
-  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^10.0.0",
