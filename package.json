@@ -8,7 +8,7 @@
   "author": "Rene <renebitter@gmail.com>",
   "license": "MIT",
   "engines": {
-    "node": "16.18.0"
+    "node": "16.16.0"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
