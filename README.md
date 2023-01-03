@@ -2,7 +2,7 @@
 
 Fullstack eCommerce - MERN with Redux
 
-https://mernshop-99.herokuapp.com/
+https://mernshop-kk1f.onrender.com/
 
 ## About
 
