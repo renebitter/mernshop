@@ -4,7 +4,7 @@
 :root {
   --body-bg: #ffffff;
   --dark-color: #000000;
-  --light-color: #f5d2b3;
+  --light-color: #4b4947;
 }
 
 body {
@@ -12,11 +12,6 @@ body {
   background-color: var(--body-bg);
   color: var(--dark-color);
 }
-
-/* main {
-  min-height: 80vh;
-} */
-
 a {
   color: var(--dark-color);
   text-decoration: none;
@@ -25,18 +20,8 @@ a {
 h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  /* -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--dark-color);
-  color: white !important; */
+  color: var(--dark-color);
 }
-
-/* .hero {
-  background-image: url('/images/hero-sm.jpg');
-} */
-
-/* .hero {
-  background-image: url('/images/hero.jpg');
-} */
 
 .rating span i {
   color: #ffbb00;
@@ -62,9 +47,7 @@ h1 {
 .carousel-caption h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  /* -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--dark-color);
-  color: white !important; */
+  color: var(--dark-color);
 }
 
 .carousel img {
@@ -84,9 +67,6 @@ h1 {
   justify-content: center;
 }
 
-/* --bs-body-bg: #dae0ff;
---dark-color: #836ede;
---light-color: #f5d2b3; */
 .c-navbar {
   background-color: #ffffff;
   border-bottom: 1px solid #0000002e;
@@ -138,10 +118,19 @@ h1 {
 
 .page-link {
   background-color: #fff;
+  color: var(--light-color);
+  border-color: var(--light-color);
+}
+
+.page-link:hover {
+  background-color: var(--light-color);
+  color: #ffffff;
+  border-color: var(--light-color);
 }
 
 .page-item.active .page-link {
-  background-color: #93a7ff !important;
+  background-color: var(--light-color);
+  border-color: var(--light-color);
 }
 
 .list-group {
@@ -158,10 +147,6 @@ h1 {
 .navbar-brand {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  /* -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: var(--dark-color);
-  color: white !important;
-  text-shadow: 4px 3px 0px #bebece; */
 }
 
 .navbar-expand-lg .navbar-collapse {
