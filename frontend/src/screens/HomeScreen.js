@@ -29,7 +29,7 @@ const HomeScreen = ({ match }) => {
       <Meta />
       {!keyword ? (
         <>
-          <Hero />
+          {/* <Hero /> */}
           <ProductCarousel />
         </>
       ) : (

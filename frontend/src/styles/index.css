@@ -2,8 +2,8 @@
 @import './bootstrap.min.css';
 
 :root {
-  --body-bg: #dae0ff;
-  --dark-color: #836ede;
+  --body-bg: #ffffff;
+  --dark-color: #000000;
   --light-color: #f5d2b3;
 }
 
@@ -23,11 +23,11 @@ a {
 }
 
 h1 {
-  font-family: 'Titan One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  -webkit-text-stroke-width: 2px;
+  /* -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--dark-color);
-  color: white !important;
+  color: white !important; */
 }
 
 /* .hero {
@@ -43,10 +43,6 @@ h1 {
 }
 
 /* carousel */
-.carousel {
-  margin-top: 100px;
-}
-
 .carousel-item-next,
 .carousel-item-prev,
 .carousel-item.active {
@@ -58,17 +54,17 @@ h1 {
 }
 
 .carousel-caption h2 {
-  font-family: 'Titan One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   color: var(--dark-color);
 }
 
 .carousel-caption h3 {
-  font-family: 'Titan One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--dark-color);
-  color: white !important;
+  color: white !important; */
 }
 
 .carousel img {
@@ -93,6 +89,7 @@ h1 {
 --light-color: #f5d2b3; */
 .c-navbar {
   background-color: #ffffff;
+  border-bottom: 1px solid #0000002e;
 }
 
 .navbar-light .navbar-nav .nav-link .navbar-brand {
@@ -140,11 +137,11 @@ h1 {
 }
 
 .page-link {
-  background-color: #cfdaff;
+  background-color: #fff;
 }
 
 .page-item.active .page-link {
-  background-color: #afc1ff !important;
+  background-color: #93a7ff !important;
 }
 
 .list-group {
@@ -159,12 +156,12 @@ h1 {
 }
 
 .navbar-brand {
-  font-family: 'Titan One', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  -webkit-text-stroke-width: 2px;
+  /* -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: var(--dark-color);
   color: white !important;
-  text-shadow: 4px 3px 0px #bebece;
+  text-shadow: 4px 3px 0px #bebece; */
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -194,5 +191,6 @@ h1 {
 
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  filter: brightness(0.5) sepia(1) hue-rotate(204deg) saturate(5);
+  filter: brightness(0) sepia(1) hue-rotate(204deg) saturate(5);
+  color: #000 !important;
 }
